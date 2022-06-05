@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+</head>
+<body >
+     
+    
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">bem vindo de volta!</h2><br>
+               </p>
+                <p class="description description-primary">Por favor faça o login com suas informações pessoais</p>
+                <button id="signin" class="btn btn-primary">Login</button>
+            </div>    
+            <div class="second-column">
+                <form id="formcadastro" class="form">
+                    <div class="full-box">
+                    <label class="label-input" for="name">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" name="name" id="name" placeholder="Digite seu nome Completo" data-min-length="5" data-required data-only-letters>
+                    </label>
+                    </div>
+
+                    <div class="full-box">
+                    <label class="label-input" for="email">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input  name="email" id="email" placeholder="Email"  data-required data-email-validate >
+                    </label>
+                    </div>
+
+                    <div class="full-box">
+                    <label class="label-input" for="cpf">
+                        <i class="far fa-id-card icon-modify"></i>
+                        <input type="text" name="cpf" id="cpf" placeholder="CPF" data-cpf-length="11"  data-required data-only-numbers>
+                    </label>
+                    </div>
+                    
+                    <div class="full-box">
+                    <label class="label-input" for="senha">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input  type="text" name="senha" id="senha" placeholder="Senha"  data-required data-password-validate data-minpass-length="8">
+                    </label>
+                    </div>
+
+                    <div class="full-box">
+                    <label class="label-input" for="confirmar">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input   type="text" name="confirmar" id="confirmar" placeholder="Confirme sua senha"  data-required data-equal="senha">
+                    </label>
+                    </div> 
+                      
+                    <button type="submit" id="btn-submit" class="btn btn-second" style="margin-top: 10px" >cadastra-se</button>
+                    
+                </form>
+            </div><!-- second column -->
+        </div><!-- first content -->
+        <p class="error-validation template"></p>
+
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">olá, amigo!</h2>
+                <p class="description description-primary">insira seus dados pessoais</p>
+                <p class="description description-primary">e comece a ganhar conosco</p>
+                <button id="signup" class="btn btn-primary">inscreva-se</button>
+            </div>
+            <div class="second-column">
+                <p class="description description-second">Use sua conta de e-mail:</p>
+                <form id="formcadastro2" class="form">
+                
+                <div class="full-box">
+                    <label class="label-input" for="email">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input name="email2" id="email2" placeholder="Email"  data-required data-email-validate >
+                    </label>
+                    </div>
+                
+                    <div class="full-box">
+                    <label class="label-input" for="senha">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" name="password" id="password2" type="checkbox" placeholder="Senha"  data-required>
+                    </label>
+                    </div>
+
+
+                    <a class="password" href="">esqueceu sua senha?</a>
+
+                    <button id="btn-submit2" class="btn btn-second">entrar</button>
+                </form>
+            </div><!-- second column -->
+        </div><!-- second-content -->
+    </div>
+
+    <script src="js/cadastro.js"></script>
+    <script src="js/login.js"></script>
+    
+        <?
+include "conecta.php";
+if(strlen($_POST['nome']))
+{
+    if(sendMail($_POST['email'],'seuemail@gmail.com', $_POST['mensagem'], 'Formulário de contato'))
+    {
+        echo "Sua mensagem foi enviada com sucesso!";
+    }
+    else
+    {
+        echo "Ocorreu um erro ao enviar";
+    }
+    echo "<br><a href='index.php'>Voltar</a>";
+    exit();
+}?>
+
+</body>
+</html>

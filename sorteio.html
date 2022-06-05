@@ -1,0 +1,133 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+    	<title>Faça seu sorteio</title>
+    <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+         <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+      </head>
+      <body class="fundo">
+       <header>
+                                       <!--Início Barra de navegação -->
+        <nav class="navbar navbar-expand-md  navbar-light nav-tranparente">   
+         <div class="container">
+           <div id="area-logo"> <!-- Logo -->
+            <a href="index.html" class="nav-brand nav-link">
+           <h1 class="fonte">GP.<span class="branco">cupons</span></h1>
+            </a>
+          </div> <!-- Fim Logo -->
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal" >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+          <div class="collapse navbar-collapse" id="nav-principal" ><!-- Menu -->
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link text-light ml-3 mr-3">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="parcerias.html" class="nav-link text-light ml-3">Parcerias</a>
+              </li>
+              <li class="nav-item">
+                <a href="quem-somos.html" class="nav-link text-light ml-3 mr-5">Quem somos</a>
+              </li>
+               <li class="dropdown">
+            <a class=" dropdown-toggle far fa-user-circle fa-2x" data-toggle="dropdown" style="color: #FFFF; margin-left: 10px;"><span></span></a> 
+            <ul class="dropdown-menu" style="background-color:#000000">
+              <li class="nav-item"><a class="far fa-id-card nav-link text-light" href=""><span> </span> <b>Meu Perfil</b></a></li>
+              <li class="nav-item"><a class="fas fa-ticket-alt nav-link text-light" href=""><span> </span>Meus Sorteios</a></li>
+              <li class="nav-item"><a class=" fas fa-sign-out-alt nav-link text-danger" href="index.html"><span> </span>Sair</a></li> 
+            </ul>    
+            </li>
+            </ul>
+           </div><!-- Fim Menu -->
+          </div>
+        </nav><!--Fim Barra de navegação -->
+
+
+
+    </header>
+      <section style="padding-top: 85px" class=" sorteio d-flex">  <!--  Seção botão -->
+       <div class="container align-self-center">
+      	<div class="row">
+      		<div class="col-md-12">
+
+      	   <div>
+      		  <h1 class="fonte1 text-sm-center">DESCONTOS DE 5% ATÉ 60%</h1>
+      	   </div>  
+
+      <div style="padding-top: 50px" class=" sorteio d-flex justify-content-center">
+      	<div class="row">
+      	<div class="col-md-12">
+         <button class="btn btn-dark btn-lg btn-principal center-block" onclick="sorteios()" "result()"><h1 class="fonte-botao">SORTEAR</h1></button>
+         </div>
+      </div>
+       </div> <!-- Fim área botão -->
+
+        <h2 class="resultado1" id="resultado"></h2>
+
+      <hr/>
+
+        <h3 class="resultado2 " id="numeracao"></h3>
+        </div>
+       </div>
+      </div>
+    </section> <!-- Fim Seção -->
+
+      <!--  <footer> 
+   <div  class="row">
+     <div class="col-md-4">  
+       <a href="index.html" class="nav-brand nav-link">
+        <h1 class="fonte-rodape">GP.<span class="branco">cupons</span></h1>
+       </a>
+      </div>
+      <div class="col-md-2 d-none d-md-block">
+         <h4>Company</h4>
+          <ul class="navbar-nav">
+           <li><a href="">Sobre</a></li>
+           <li><a href="">Empregos</a></li>
+           <li><a href="">Empresas</a></li>
+           </ul>
+       </div>
+       <div class="col-md-2 d-none d-md-block">
+          <h4>Links úteis</h4>
+           <ul class="navbar-nav">
+             <li><a href="">Ajuda</a></li>
+             <li><a href="">Presentes</a></li>
+             <li><a href="">Player da web</a></li>
+           </ul>
+        </div>
+        <div  class="col-md-4"> 
+         <ul>
+          <li style="padding: 8px">
+            <a href=""><img src="imagens/facebook.png"></a>
+           </li>
+           <li style="padding: 8px">
+             <a href=""><img src="imagens/twitter.png"></a>
+           </li>
+           <li style="padding: 8px">
+             <a href=""><img src="imagens/instagram.png"></a>
+           </li>
+          </ul>
+          </div> 
+        </div>       
+      </div>
+  </footer> -->
+
+
+
+      <!-- JavaScript (Opcional) -->
+        <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+         <script src="js/script.js"></script>
+        
+    	</body>
+
+    </html>

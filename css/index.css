@@ -1,0 +1,229 @@
+/* Logo */
+
+@font-face {
+
+	font-family: Bunny;
+	src: url("../fonte/Bunny.woff");
+}
+
+@font-face {
+
+	font-family: Star;
+	src: url("../fonte/Star.woff");
+}
+
+.fonte {
+
+	font-family: Bunny;
+	color: #EDC967;
+		}
+.fonte-rodape {
+	padding-left: 30px;
+	font-size: 1.9em;
+	font-family: Bunny;
+	color: #EDC967;
+}
+
+.fonte1 {
+    font-family: Star;
+	color: black;
+	font-size: 2.5em;
+	font-weight: bold;
+	padding-left: 0px;
+  
+		}
+
+.fonte2 {
+    font-family: Star;
+	color: black;
+	font-size: 3em;
+	font-weight: bold;
+	padding-left: 0px;
+  
+		}
+
+.fonte-botao {
+
+	font-family: Star;
+	color: white;
+	font-size: 1.5em;
+
+}
+
+.fonte-botao:hover {
+	color: #EDC967;
+}
+
+.branco {
+
+	color: white;
+
+}
+
+.user{
+	font-size: 30px;
+}
+
+/* Geral*/
+
+
+	
+body {
+    
+  background: url(../imagens/fundo.jpg);
+  overflow-x: hidden;
+}
+input{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+label {
+	font-weight: bold;
+
+}
+
+
+.img_porcento {
+	padding-left: 120px;
+}
+
+/* Barra de navegaçao */
+
+nav.nav-tranparente {
+	padding: 15px 0px;
+	background: rgba(0,0,0,0.6);
+}	
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+
+	color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+
+	color: #9bf0e1;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,0.5);
+}
+
+
+/*Botões*/
+
+.btn-custom {
+	color: white;
+	border-radius: 500px
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	text-transform: uppercase;
+	transition: background 0.4s, color 0.4s;
+	
+}
+
+
+.btn-principal:hover {
+	background: white;
+	color: black;
+	
+}
+
+.area-botao {
+	justify-content: center;
+	margin-top: 50px;
+
+
+}
+
+
+.sorteio {
+	
+	padding-top: 40px;
+}
+
+
+
+p {
+	font-weight: bold;
+	
+}
+
+.resultado1{
+	margin-top: 30px;
+	text-align: center;
+	color: white;
+	font-family: Georgia, 'Time New Roman', Times, serif;
+	padding: 0.8rem;
+	color: white;
+}
+
+.resultado2{
+	padding-top: 20px;
+	text-align: center;
+	color: white;
+	font-family: Georgia, 'Time New Roman', Times, serif;
+	padding: 0.8rem;
+	color: black;
+
+
+}
+
+.capa {
+	text-align: center;
+}
+
+li{
+
+	list-style: none;
+
+
+}
+
+.countdown {
+ 
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(10px, 90px));
+   justify-content: center;
+   padding-right: 20px;
+   margin-top: 40px;
+   gap: 10px;
+  
+   
+}
+
+
+
+
+
+.countdown li {
+	font-family: Georgia, 'Time New Roman', Times, serif;
+	font-style: italic;
+	padding: 0.8rem;
+	color: white;
+	background: #1e1e1e;
+	border-radius: 20px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.9);
+	text-align: center;
+}
+
+.countdown li span {
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-size: 1.2em;
+
+}
+
+.estilo-dropdown {
+	color: #FFFF;
+	margin-left: 10px;
+}
+
+
